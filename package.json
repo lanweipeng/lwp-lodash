@@ -1,0 +1,21 @@
+{
+  "name": "lwp-lodash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_basePull.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:createFile":"node createFile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanweipeng/lwp-lodash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanweipeng/lwp-lodash/issues"
+  },
+  "homepage": "https://github.com/lanweipeng/lwp-lodash#readme"
+}
