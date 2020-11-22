@@ -1,4 +1,4 @@
-const basepull =require('./_basepull')
+const basepullAll =require('./_basepull')
 function pullAll(arr,arg){
   return basepullAll(arr,arg)
 }

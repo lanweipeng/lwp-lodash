@@ -1,8 +1,12 @@
-function lastIndexOf(arr,n){
-  let flag=0;
- for(let i=0;i<arr.length;i++){
-   if(arr[i]===n){
-     flag=i
+function lastIndexOf(array,value,fromIndex){
+  if(!fromIndex){
+    fromIndex=array.length-1
+  }
+  let flag;
+ for(let i=fromIndex;i>=0;i--){
+   if(array[i]===value){
+     flag=i;
+     break;
    }
  }
   return flag;

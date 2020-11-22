@@ -4,8 +4,11 @@
   "description": "",
   "main": "_basePull.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:createFile":"node createFile"
+    "test": "jest",
+    "dev:createFile": "node createFile",
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch ",
+    "build": "webpack&&node ./dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/lanweipeng/lwp-lodash/issues"
   },
-  "homepage": "https://github.com/lanweipeng/lwp-lodash#readme"
+  "homepage": "https://github.com/lanweipeng/lwp-lodash#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-webpack": "^0.5.1",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
 }
