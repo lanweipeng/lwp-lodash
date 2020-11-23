@@ -1,4 +1,4 @@
-const xorBy=require('./xorBy')
+const xorBy=require('../xorBy')
 
 // console.log(xorBy([1.2,2.3],[1.3,3.4],Math.floor))
 // _.xorBy([2.1, 1.2], [2.3, 3.4], Math.floor);

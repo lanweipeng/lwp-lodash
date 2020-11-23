@@ -2,7 +2,7 @@ var fs=require('fs');
 //先创建data目录 目录文件操作存在权限问题
 // fs.mkdirSyns('data')
 //写入内容
-const arr=['eq'];
+const arr=['forEach'];
 arr.forEach(item=>{
   fs.writeFile(`${item}.js`,'',function(error){
     console.log(error);

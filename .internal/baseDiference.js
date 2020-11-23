@@ -1,3 +1,4 @@
+const {dealInteratee}=require('../utils')
 function baseDifference(arr,other,interatee){
   if(interatee){
     other=other.map(item=>dealInteratee(interatee,item));
@@ -11,8 +12,5 @@ function baseDifference(arr,other,interatee){
     }
   });
   return res; 
-}
-function dealInteratee(interatee,value){
-  return typeof interatee==='function'?interatee(value):value[interatee]
 }
 module.exports=baseDifference

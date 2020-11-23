@@ -1,4 +1,4 @@
-const difference = require("../difference")
+const baseDiference = require("./baseDiference")
 
 const baseXor = (arr,interatee) => {
  
@@ -8,7 +8,7 @@ const baseXor = (arr,interatee) => {
     let otherIndex = -1
     while (++otherIndex < length) {
       if(index!=otherIndex){
-        res.push(difference(arr[index],arr[otherIndex],interatee))
+        res.push(baseDiference(arr[index],arr[otherIndex],interatee))
       }
     }
   }
