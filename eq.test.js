@@ -17,3 +17,6 @@ test('eq4', () => {
 test('eq5', () => {
   expect(eq(NaN,NaN)).toBe(true);
 });
+test('eq6', () => {
+  expect(eq(0,-0)).toBe(true);
+});
